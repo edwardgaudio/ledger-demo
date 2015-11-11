@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BEBF9341BF3D1DD00FD6C46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEBF9331BF3D1DD00FD6C46 /* AppDelegate.swift */; };
+		2BEBF9361BF3D1DD00FD6C46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEBF9351BF3D1DD00FD6C46 /* ViewController.swift */; };
+		2BEBF9391BF3D1DD00FD6C46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BEBF9371BF3D1DD00FD6C46 /* Main.storyboard */; };
+		2BEBF93B1BF3D1DD00FD6C46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BEBF93A1BF3D1DD00FD6C46 /* Assets.xcassets */; };
+		2BEBF93E1BF3D1DD00FD6C46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BEBF93C1BF3D1DD00FD6C46 /* LaunchScreen.storyboard */; };
+		2BEBF9491BF3D1DD00FD6C46 /* demo_ledgerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEBF9481BF3D1DD00FD6C46 /* demo_ledgerTests.swift */; };
+		2BEBF9541BF3D1DD00FD6C46 /* demo_ledgerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEBF9531BF3D1DD00FD6C46 /* demo_ledgerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2BEBF9451BF3D1DD00FD6C46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BEBF9281BF3D1DD00FD6C46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BEBF92F1BF3D1DD00FD6C46;
+			remoteInfo = "demo-ledger";
+		};
+		2BEBF9501BF3D1DD00FD6C46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BEBF9281BF3D1DD00FD6C46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BEBF92F1BF3D1DD00FD6C46;
+			remoteInfo = "demo-ledger";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2BEBF9301BF3D1DD00FD6C46 /* demo-ledger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "demo-ledger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BEBF9331BF3D1DD00FD6C46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2BEBF9351BF3D1DD00FD6C46 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2BEBF9381BF3D1DD00FD6C46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2BEBF93A1BF3D1DD00FD6C46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2BEBF93D1BF3D1DD00FD6C46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2BEBF93F1BF3D1DD00FD6C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BEBF9441BF3D1DD00FD6C46 /* demo-ledgerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "demo-ledgerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BEBF9481BF3D1DD00FD6C46 /* demo_ledgerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demo_ledgerTests.swift; sourceTree = "<group>"; };
+		2BEBF94A1BF3D1DD00FD6C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BEBF94F1BF3D1DD00FD6C46 /* demo-ledgerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "demo-ledgerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BEBF9531BF3D1DD00FD6C46 /* demo_ledgerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demo_ledgerUITests.swift; sourceTree = "<group>"; };
+		2BEBF9551BF3D1DD00FD6C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BEBF92D1BF3D1DD00FD6C46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BEBF9411BF3D1DD00FD6C46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BEBF94C1BF3D1DD00FD6C46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BEBF9271BF3D1DD00FD6C46 = {
+			isa = PBXGroup;
+			children = (
+				2BEBF9321BF3D1DD00FD6C46 /* demo-ledger */,
+				2BEBF9471BF3D1DD00FD6C46 /* demo-ledgerTests */,
+				2BEBF9521BF3D1DD00FD6C46 /* demo-ledgerUITests */,
+				2BEBF9311BF3D1DD00FD6C46 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2BEBF9311BF3D1DD00FD6C46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BEBF9301BF3D1DD00FD6C46 /* demo-ledger.app */,
+				2BEBF9441BF3D1DD00FD6C46 /* demo-ledgerTests.xctest */,
+				2BEBF94F1BF3D1DD00FD6C46 /* demo-ledgerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BEBF9321BF3D1DD00FD6C46 /* demo-ledger */ = {
+			isa = PBXGroup;
+			children = (
+				2BEBF9331BF3D1DD00FD6C46 /* AppDelegate.swift */,
+				2BEBF9351BF3D1DD00FD6C46 /* ViewController.swift */,
+				2BEBF9371BF3D1DD00FD6C46 /* Main.storyboard */,
+				2BEBF93A1BF3D1DD00FD6C46 /* Assets.xcassets */,
+				2BEBF93C1BF3D1DD00FD6C46 /* LaunchScreen.storyboard */,
+				2BEBF93F1BF3D1DD00FD6C46 /* Info.plist */,
+			);
+			path = "demo-ledger";
+			sourceTree = "<group>";
+		};
+		2BEBF9471BF3D1DD00FD6C46 /* demo-ledgerTests */ = {
+			isa = PBXGroup;
+			children = (
+				2BEBF9481BF3D1DD00FD6C46 /* demo_ledgerTests.swift */,
+				2BEBF94A1BF3D1DD00FD6C46 /* Info.plist */,
+			);
+			path = "demo-ledgerTests";
+			sourceTree = "<group>";
+		};
+		2BEBF9521BF3D1DD00FD6C46 /* demo-ledgerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2BEBF9531BF3D1DD00FD6C46 /* demo_ledgerUITests.swift */,
+				2BEBF9551BF3D1DD00FD6C46 /* Info.plist */,
+			);
+			path = "demo-ledgerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2BEBF92F1BF3D1DD00FD6C46 /* demo-ledger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BEBF9581BF3D1DD00FD6C46 /* Build configuration list for PBXNativeTarget "demo-ledger" */;
+			buildPhases = (
+				2BEBF92C1BF3D1DD00FD6C46 /* Sources */,
+				2BEBF92D1BF3D1DD00FD6C46 /* Frameworks */,
+				2BEBF92E1BF3D1DD00FD6C46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "demo-ledger";
+			productName = "demo-ledger";
+			productReference = 2BEBF9301BF3D1DD00FD6C46 /* demo-ledger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2BEBF9431BF3D1DD00FD6C46 /* demo-ledgerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BEBF95B1BF3D1DD00FD6C46 /* Build configuration list for PBXNativeTarget "demo-ledgerTests" */;
+			buildPhases = (
+				2BEBF9401BF3D1DD00FD6C46 /* Sources */,
+				2BEBF9411BF3D1DD00FD6C46 /* Frameworks */,
+				2BEBF9421BF3D1DD00FD6C46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BEBF9461BF3D1DD00FD6C46 /* PBXTargetDependency */,
+			);
+			name = "demo-ledgerTests";
+			productName = "demo-ledgerTests";
+			productReference = 2BEBF9441BF3D1DD00FD6C46 /* demo-ledgerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2BEBF94E1BF3D1DD00FD6C46 /* demo-ledgerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BEBF95E1BF3D1DD00FD6C46 /* Build configuration list for PBXNativeTarget "demo-ledgerUITests" */;
+			buildPhases = (
+				2BEBF94B1BF3D1DD00FD6C46 /* Sources */,
+				2BEBF94C1BF3D1DD00FD6C46 /* Frameworks */,
+				2BEBF94D1BF3D1DD00FD6C46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BEBF9511BF3D1DD00FD6C46 /* PBXTargetDependency */,
+			);
+			name = "demo-ledgerUITests";
+			productName = "demo-ledgerUITests";
+			productReference = 2BEBF94F1BF3D1DD00FD6C46 /* demo-ledgerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2BEBF9281BF3D1DD00FD6C46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "edward gaudio";
+				TargetAttributes = {
+					2BEBF92F1BF3D1DD00FD6C46 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					2BEBF9431BF3D1DD00FD6C46 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 2BEBF92F1BF3D1DD00FD6C46;
+					};
+					2BEBF94E1BF3D1DD00FD6C46 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 2BEBF92F1BF3D1DD00FD6C46;
+					};
+				};
+			};
+			buildConfigurationList = 2BEBF92B1BF3D1DD00FD6C46 /* Build configuration list for PBXProject "demo-ledger" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2BEBF9271BF3D1DD00FD6C46;
+			productRefGroup = 2BEBF9311BF3D1DD00FD6C46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2BEBF92F1BF3D1DD00FD6C46 /* demo-ledger */,
+				2BEBF9431BF3D1DD00FD6C46 /* demo-ledgerTests */,
+				2BEBF94E1BF3D1DD00FD6C46 /* demo-ledgerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2BEBF92E1BF3D1DD00FD6C46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BEBF93E1BF3D1DD00FD6C46 /* LaunchScreen.storyboard in Resources */,
+				2BEBF93B1BF3D1DD00FD6C46 /* Assets.xcassets in Resources */,
+				2BEBF9391BF3D1DD00FD6C46 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BEBF9421BF3D1DD00FD6C46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BEBF94D1BF3D1DD00FD6C46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BEBF92C1BF3D1DD00FD6C46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BEBF9361BF3D1DD00FD6C46 /* ViewController.swift in Sources */,
+				2BEBF9341BF3D1DD00FD6C46 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BEBF9401BF3D1DD00FD6C46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BEBF9491BF3D1DD00FD6C46 /* demo_ledgerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BEBF94B1BF3D1DD00FD6C46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BEBF9541BF3D1DD00FD6C46 /* demo_ledgerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2BEBF9461BF3D1DD00FD6C46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BEBF92F1BF3D1DD00FD6C46 /* demo-ledger */;
+			targetProxy = 2BEBF9451BF3D1DD00FD6C46 /* PBXContainerItemProxy */;
+		};
+		2BEBF9511BF3D1DD00FD6C46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BEBF92F1BF3D1DD00FD6C46 /* demo-ledger */;
+			targetProxy = 2BEBF9501BF3D1DD00FD6C46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2BEBF9371BF3D1DD00FD6C46 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BEBF9381BF3D1DD00FD6C46 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2BEBF93C1BF3D1DD00FD6C46 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BEBF93D1BF3D1DD00FD6C46 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2BEBF9561BF3D1DD00FD6C46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2BEBF9571BF3D1DD00FD6C46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2BEBF9591BF3D1DD00FD6C46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "demo-ledger/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edg.demo-ledger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2BEBF95A1BF3D1DD00FD6C46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "demo-ledger/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edg.demo-ledger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2BEBF95C1BF3D1DD00FD6C46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "demo-ledgerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edg.demo-ledgerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/demo-ledger.app/demo-ledger";
+			};
+			name = Debug;
+		};
+		2BEBF95D1BF3D1DD00FD6C46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "demo-ledgerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edg.demo-ledgerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/demo-ledger.app/demo-ledger";
+			};
+			name = Release;
+		};
+		2BEBF95F1BF3D1DD00FD6C46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "demo-ledgerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edg.demo-ledgerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "demo-ledger";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		2BEBF9601BF3D1DD00FD6C46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "demo-ledgerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edg.demo-ledgerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "demo-ledger";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BEBF92B1BF3D1DD00FD6C46 /* Build configuration list for PBXProject "demo-ledger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BEBF9561BF3D1DD00FD6C46 /* Debug */,
+				2BEBF9571BF3D1DD00FD6C46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BEBF9581BF3D1DD00FD6C46 /* Build configuration list for PBXNativeTarget "demo-ledger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BEBF9591BF3D1DD00FD6C46 /* Debug */,
+				2BEBF95A1BF3D1DD00FD6C46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2BEBF95B1BF3D1DD00FD6C46 /* Build configuration list for PBXNativeTarget "demo-ledgerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BEBF95C1BF3D1DD00FD6C46 /* Debug */,
+				2BEBF95D1BF3D1DD00FD6C46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2BEBF95E1BF3D1DD00FD6C46 /* Build configuration list for PBXNativeTarget "demo-ledgerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BEBF95F1BF3D1DD00FD6C46 /* Debug */,
+				2BEBF9601BF3D1DD00FD6C46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2BEBF9281BF3D1DD00FD6C46 /* Project object */;
+}
