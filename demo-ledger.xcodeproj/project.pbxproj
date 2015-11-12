@@ -117,15 +117,15 @@
 		2BEBF9321BF3D1DD00FD6C46 /* demo-ledger */ = {
 			isa = PBXGroup;
 			children = (
-				2BEBF9771BF4E91600FD6C46 /* Lib */,
 				2BEBF9331BF3D1DD00FD6C46 /* AppDelegate.swift */,
-				2BEBF9351BF3D1DD00FD6C46 /* LedgerViewController.swift */,
-				2BEBF96F1BF405D200FD6C46 /* TransactionTableViewCell.swift */,
-				2BEBF9731BF40FC900FD6C46 /* TransactionDetailViewController.swift */,
+				2BEBF97E1BF544C100FD6C46 /* Controllers */,
+				2BEBF97F1BF544D500FD6C46 /* Cells */,
+				2BEBF9771BF4E91600FD6C46 /* Lib */,
 				2BEBF9691BF3F18600FD6C46 /* Views */,
 				2BEBF9621BF3D21100FD6C46 /* Services */,
 				2BEBF9611BF3D20200FD6C46 /* Models */,
 				2BEBF93A1BF3D1DD00FD6C46 /* Assets.xcassets */,
+				2BEBF97C1BF514D200FD6C46 /* Config.txt */,
 				2BEBF93F1BF3D1DD00FD6C46 /* Info.plist */,
 			);
 			path = "demo-ledger";
@@ -136,7 +136,6 @@
 			children = (
 				2BEBF9481BF3D1DD00FD6C46 /* demo_ledgerTests.swift */,
 				2BEBF94A1BF3D1DD00FD6C46 /* Info.plist */,
-				2BEBF97C1BF514D200FD6C46 /* Config.txt */,
 			);
 			path = "demo-ledgerTests";
 			sourceTree = "<group>";
@@ -183,6 +182,23 @@
 				2BEBF9781BF4E92A00FD6C46 /* Extensions.swift */,
 			);
 			name = Lib;
+			sourceTree = "<group>";
+		};
+		2BEBF97E1BF544C100FD6C46 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2BEBF9351BF3D1DD00FD6C46 /* LedgerViewController.swift */,
+				2BEBF9731BF40FC900FD6C46 /* TransactionDetailViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		2BEBF97F1BF544D500FD6C46 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2BEBF96F1BF405D200FD6C46 /* TransactionTableViewCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

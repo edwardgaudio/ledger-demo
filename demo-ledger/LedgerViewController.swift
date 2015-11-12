@@ -135,15 +135,9 @@ class LedgerViewController: UIViewController, UITableViewDataSource, UITableView
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("tranactionCell", forIndexPath: indexPath) as! TransactionTableViewCell
-        
-        //TODO: Subscript ledgers to return the row
         let item = ledger.transactions.reverse()[indexPath.row]
         
         cell.data = item
-        cell.NoteLabel.text = item.note
-        //cell.middleLabel.text = items[indexPath.row]
-        //cell.leftLabel.text = items[indexPath.row]
-        //cell.rightLabel.text = items[indexPath.row]
         
         return cell
     }
