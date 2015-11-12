@@ -8,12 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		2BEBF9341BF3D1DD00FD6C46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEBF9331BF3D1DD00FD6C46 /* AppDelegate.swift */; };
-		2BEBF9361BF3D1DD00FD6C46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEBF9351BF3D1DD00FD6C46 /* ViewController.swift */; };
-		2BEBF9391BF3D1DD00FD6C46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BEBF9371BF3D1DD00FD6C46 /* Main.storyboard */; };
+		2BEBF9361BF3D1DD00FD6C46 /* LedgerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEBF9351BF3D1DD00FD6C46 /* LedgerViewController.swift */; };
 		2BEBF93B1BF3D1DD00FD6C46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BEBF93A1BF3D1DD00FD6C46 /* Assets.xcassets */; };
 		2BEBF93E1BF3D1DD00FD6C46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BEBF93C1BF3D1DD00FD6C46 /* LaunchScreen.storyboard */; };
 		2BEBF9491BF3D1DD00FD6C46 /* demo_ledgerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEBF9481BF3D1DD00FD6C46 /* demo_ledgerTests.swift */; };
 		2BEBF9541BF3D1DD00FD6C46 /* demo_ledgerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEBF9531BF3D1DD00FD6C46 /* demo_ledgerUITests.swift */; };
+		2BEBF9641BF3F04B00FD6C46 /* LedgerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEBF9631BF3F04B00FD6C46 /* LedgerModel.swift */; };
+		2BEBF9661BF3F06E00FD6C46 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEBF9651BF3F06E00FD6C46 /* TransactionModel.swift */; };
+		2BEBF9681BF3F07E00FD6C46 /* LedgerServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEBF9671BF3F07E00FD6C46 /* LedgerServices.swift */; };
+		2BEBF9711BF405D200FD6C46 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEBF96F1BF405D200FD6C46 /* TransactionTableViewCell.swift */; };
+		2BEBF9721BF405D200FD6C46 /* TransactionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BEBF9701BF405D200FD6C46 /* TransactionTableViewCell.xib */; };
+		2BEBF9741BF40FC900FD6C46 /* TransactionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEBF9731BF40FC900FD6C46 /* TransactionDetailViewController.swift */; };
+		2BEBF9761BF4284000FD6C46 /* LedgerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BEBF9751BF4284000FD6C46 /* LedgerView.xib */; };
+		2BEBF9791BF4E92A00FD6C46 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEBF9781BF4E92A00FD6C46 /* Extensions.swift */; };
+		2BEBF97B1BF4FB2E00FD6C46 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEBF97A1BF4FB2E00FD6C46 /* CoreLocation.framework */; };
+		2BEBF97D1BF514D200FD6C46 /* Config.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2BEBF97C1BF514D200FD6C46 /* Config.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +45,7 @@
 /* Begin PBXFileReference section */
 		2BEBF9301BF3D1DD00FD6C46 /* demo-ledger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "demo-ledger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BEBF9331BF3D1DD00FD6C46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2BEBF9351BF3D1DD00FD6C46 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2BEBF9381BF3D1DD00FD6C46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2BEBF9351BF3D1DD00FD6C46 /* LedgerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedgerViewController.swift; sourceTree = "<group>"; };
 		2BEBF93A1BF3D1DD00FD6C46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BEBF93D1BF3D1DD00FD6C46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BEBF93F1BF3D1DD00FD6C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +55,16 @@
 		2BEBF94F1BF3D1DD00FD6C46 /* demo-ledgerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "demo-ledgerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BEBF9531BF3D1DD00FD6C46 /* demo_ledgerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demo_ledgerUITests.swift; sourceTree = "<group>"; };
 		2BEBF9551BF3D1DD00FD6C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BEBF9631BF3F04B00FD6C46 /* LedgerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LedgerModel.swift; sourceTree = "<group>"; };
+		2BEBF9651BF3F06E00FD6C46 /* TransactionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
+		2BEBF9671BF3F07E00FD6C46 /* LedgerServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LedgerServices.swift; sourceTree = "<group>"; };
+		2BEBF96F1BF405D200FD6C46 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
+		2BEBF9701BF405D200FD6C46 /* TransactionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransactionTableViewCell.xib; sourceTree = "<group>"; };
+		2BEBF9731BF40FC900FD6C46 /* TransactionDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionDetailViewController.swift; sourceTree = "<group>"; };
+		2BEBF9751BF4284000FD6C46 /* LedgerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LedgerView.xib; sourceTree = "<group>"; };
+		2BEBF9781BF4E92A00FD6C46 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		2BEBF97A1BF4FB2E00FD6C46 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2BEBF97C1BF514D200FD6C46 /* Config.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Config.txt; path = ../Config.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BEBF97B1BF4FB2E00FD6C46 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +96,7 @@
 		2BEBF9271BF3D1DD00FD6C46 = {
 			isa = PBXGroup;
 			children = (
+				2BEBF97A1BF4FB2E00FD6C46 /* CoreLocation.framework */,
 				2BEBF9321BF3D1DD00FD6C46 /* demo-ledger */,
 				2BEBF9471BF3D1DD00FD6C46 /* demo-ledgerTests */,
 				2BEBF9521BF3D1DD00FD6C46 /* demo-ledgerUITests */,
@@ -97,11 +117,15 @@
 		2BEBF9321BF3D1DD00FD6C46 /* demo-ledger */ = {
 			isa = PBXGroup;
 			children = (
+				2BEBF9771BF4E91600FD6C46 /* Lib */,
 				2BEBF9331BF3D1DD00FD6C46 /* AppDelegate.swift */,
-				2BEBF9351BF3D1DD00FD6C46 /* ViewController.swift */,
-				2BEBF9371BF3D1DD00FD6C46 /* Main.storyboard */,
+				2BEBF9351BF3D1DD00FD6C46 /* LedgerViewController.swift */,
+				2BEBF96F1BF405D200FD6C46 /* TransactionTableViewCell.swift */,
+				2BEBF9731BF40FC900FD6C46 /* TransactionDetailViewController.swift */,
+				2BEBF9691BF3F18600FD6C46 /* Views */,
+				2BEBF9621BF3D21100FD6C46 /* Services */,
+				2BEBF9611BF3D20200FD6C46 /* Models */,
 				2BEBF93A1BF3D1DD00FD6C46 /* Assets.xcassets */,
-				2BEBF93C1BF3D1DD00FD6C46 /* LaunchScreen.storyboard */,
 				2BEBF93F1BF3D1DD00FD6C46 /* Info.plist */,
 			);
 			path = "demo-ledger";
@@ -112,6 +136,7 @@
 			children = (
 				2BEBF9481BF3D1DD00FD6C46 /* demo_ledgerTests.swift */,
 				2BEBF94A1BF3D1DD00FD6C46 /* Info.plist */,
+				2BEBF97C1BF514D200FD6C46 /* Config.txt */,
 			);
 			path = "demo-ledgerTests";
 			sourceTree = "<group>";
@@ -123,6 +148,41 @@
 				2BEBF9551BF3D1DD00FD6C46 /* Info.plist */,
 			);
 			path = "demo-ledgerUITests";
+			sourceTree = "<group>";
+		};
+		2BEBF9611BF3D20200FD6C46 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2BEBF9631BF3F04B00FD6C46 /* LedgerModel.swift */,
+				2BEBF9651BF3F06E00FD6C46 /* TransactionModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2BEBF9621BF3D21100FD6C46 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2BEBF9671BF3F07E00FD6C46 /* LedgerServices.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		2BEBF9691BF3F18600FD6C46 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2BEBF93C1BF3D1DD00FD6C46 /* LaunchScreen.storyboard */,
+				2BEBF9701BF405D200FD6C46 /* TransactionTableViewCell.xib */,
+				2BEBF9751BF4284000FD6C46 /* LedgerView.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		2BEBF9771BF4E91600FD6C46 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				2BEBF9781BF4E92A00FD6C46 /* Extensions.swift */,
+			);
+			name = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +291,9 @@
 			files = (
 				2BEBF93E1BF3D1DD00FD6C46 /* LaunchScreen.storyboard in Resources */,
 				2BEBF93B1BF3D1DD00FD6C46 /* Assets.xcassets in Resources */,
-				2BEBF9391BF3D1DD00FD6C46 /* Main.storyboard in Resources */,
+				2BEBF9721BF405D200FD6C46 /* TransactionTableViewCell.xib in Resources */,
+				2BEBF97D1BF514D200FD6C46 /* Config.txt in Resources */,
+				2BEBF9761BF4284000FD6C46 /* LedgerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +318,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BEBF9361BF3D1DD00FD6C46 /* ViewController.swift in Sources */,
+				2BEBF9661BF3F06E00FD6C46 /* TransactionModel.swift in Sources */,
+				2BEBF9361BF3D1DD00FD6C46 /* LedgerViewController.swift in Sources */,
+				2BEBF9641BF3F04B00FD6C46 /* LedgerModel.swift in Sources */,
+				2BEBF9791BF4E92A00FD6C46 /* Extensions.swift in Sources */,
+				2BEBF9681BF3F07E00FD6C46 /* LedgerServices.swift in Sources */,
+				2BEBF9711BF405D200FD6C46 /* TransactionTableViewCell.swift in Sources */,
+				2BEBF9741BF40FC900FD6C46 /* TransactionDetailViewController.swift in Sources */,
 				2BEBF9341BF3D1DD00FD6C46 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,14 +361,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2BEBF9371BF3D1DD00FD6C46 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2BEBF9381BF3D1DD00FD6C46 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2BEBF93C1BF3D1DD00FD6C46 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -398,6 +458,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "demo-ledger/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edg.demo-ledger";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -409,6 +470,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "demo-ledger/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edg.demo-ledger";
 				PRODUCT_NAME = "$(TARGET_NAME)";

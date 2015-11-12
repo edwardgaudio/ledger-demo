@@ -1,0 +1,6 @@
+{{location}}
+{{note}}
+{{device_id}}
+{{amount}}
+{{balance}}
+{{date}}

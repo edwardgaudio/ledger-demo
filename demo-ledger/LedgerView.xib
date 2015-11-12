@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LedgerViewController" customModule="demo_ledger" customModuleProvider="target">
+            <connections>
+                <outlet property="AmountInput" destination="Tmh-tV-tpk" id="3Iw-gU-iEG"/>
+                <outlet property="LedgerTable" destination="D5d-n8-oGi" id="Iiw-zV-X5t"/>
+                <outlet property="NoteInput" destination="qD3-43-dEY" id="foY-yp-SHd"/>
+                <outlet property="view" destination="iN0-l3-epB" id="nIa-M9-RAw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="80" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="D5d-n8-oGi">
+                    <rect key="frame" x="0.0" y="200" width="600" height="382"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="9ZR-fT-7eU"/>
+                        <outlet property="delegate" destination="-1" id="NHj-hC-8Je"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWp-Rz-kpL">
+                    <rect key="frame" x="15" y="124" width="80" height="41"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="KYK-0k-yeF"/>
+                        <constraint firstAttribute="height" constant="41" id="Z0F-Fh-epn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NiV-2x-Nkz">
+                    <rect key="frame" x="15" y="75" width="80" height="41"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qD3-43-dEY">
+                    <rect key="frame" x="103" y="81" width="469" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="469" id="AwZ-Oa-SVv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="pcS-VP-TLr"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tmh-tV-tpk">
+                    <rect key="frame" x="103" y="130" width="323" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="zvP-Hw-i57"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="qGp-M4-Z7A"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHY-6B-RHg">
+                    <rect key="frame" x="507" y="130" width="65" height="30"/>
+                    <animations/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="5j9-xK-dYh"/>
+                        <constraint firstAttribute="width" constant="65" id="626-c7-UgU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                    <state key="normal" title="EXPENSE">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="expenseAction:" destination="-1" eventType="touchUpInside" id="vqb-My-KEq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rK7-JI-UeS">
+                    <rect key="frame" x="434" y="130" width="65" height="30"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.0" green="0.77283321823204421" blue="0.0027219493254863436" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="bZR-2V-1w7"/>
+                        <constraint firstAttribute="width" constant="65" id="gZ8-FO-gaY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                    <state key="normal" title="DEPOSIT">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="depositAction:" destination="-1" eventType="touchUpInside" id="hFH-O6-z3S"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qD3-43-dEY" firstAttribute="leading" secondItem="Tmh-tV-tpk" secondAttribute="leading" id="52m-2H-oKj"/>
+                <constraint firstItem="rK7-JI-UeS" firstAttribute="leading" secondItem="Tmh-tV-tpk" secondAttribute="trailing" constant="8" id="Cst-fq-4ZI"/>
+                <constraint firstItem="Tmh-tV-tpk" firstAttribute="top" secondItem="qD3-43-dEY" secondAttribute="bottom" constant="19" id="Glt-dP-45w"/>
+                <constraint firstItem="D5d-n8-oGi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JMj-hk-mZy"/>
+                <constraint firstItem="qD3-43-dEY" firstAttribute="leading" secondItem="NiV-2x-Nkz" secondAttribute="trailing" constant="8" symbolic="YES" id="MYq-oi-93l"/>
+                <constraint firstItem="qD3-43-dEY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="81" id="N9e-IG-mNU"/>
+                <constraint firstItem="NiV-2x-Nkz" firstAttribute="centerY" secondItem="qD3-43-dEY" secondAttribute="centerY" id="RV1-EZ-3Ff"/>
+                <constraint firstItem="NiV-2x-Nkz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="RcX-9o-C5i"/>
+                <constraint firstAttribute="trailing" secondItem="FHY-6B-RHg" secondAttribute="trailing" constant="28" id="RlB-4o-UKA"/>
+                <constraint firstItem="FHY-6B-RHg" firstAttribute="centerY" secondItem="rK7-JI-UeS" secondAttribute="centerY" id="S4P-lk-YPh"/>
+                <constraint firstItem="Tmh-tV-tpk" firstAttribute="leading" secondItem="qWp-Rz-kpL" secondAttribute="trailing" constant="8" id="UMz-qq-f8f"/>
+                <constraint firstItem="NiV-2x-Nkz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="75" id="UTl-CJ-gYb"/>
+                <constraint firstItem="D5d-n8-oGi" firstAttribute="top" secondItem="Tmh-tV-tpk" secondAttribute="bottom" constant="40" id="ZEt-Xv-NkZ"/>
+                <constraint firstAttribute="bottom" secondItem="D5d-n8-oGi" secondAttribute="bottom" constant="18" id="ZiN-aw-1Ar"/>
+                <constraint firstItem="D5d-n8-oGi" firstAttribute="top" secondItem="qWp-Rz-kpL" secondAttribute="bottom" id="gvE-Gc-woV"/>
+                <constraint firstItem="qWp-Rz-kpL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="lrM-jb-b6D"/>
+                <constraint firstItem="qD3-43-dEY" firstAttribute="trailing" secondItem="FHY-6B-RHg" secondAttribute="trailing" id="pZO-z6-Vpc"/>
+                <constraint firstItem="FHY-6B-RHg" firstAttribute="leading" secondItem="rK7-JI-UeS" secondAttribute="trailing" constant="8" id="q37-s9-zqq"/>
+                <constraint firstAttribute="trailing" secondItem="D5d-n8-oGi" secondAttribute="trailing" id="rs0-mf-ojF"/>
+                <constraint firstItem="qWp-Rz-kpL" firstAttribute="top" secondItem="NiV-2x-Nkz" secondAttribute="bottom" constant="8" id="yKX-LP-HsX"/>
+                <constraint firstItem="rK7-JI-UeS" firstAttribute="centerY" secondItem="Tmh-tV-tpk" secondAttribute="centerY" id="yU8-Cb-gRG"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="gvE-Gc-woV"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
