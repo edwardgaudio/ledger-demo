@@ -30,6 +30,7 @@ class LedgerViewController: UIViewController, UITableViewDataSource, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Transactions"
+        self.automaticallyAdjustsScrollViewInsets = false
         self.LedgerTable.registerNib(UINib(nibName: "TransactionTableViewCell", bundle: nil), forCellReuseIdentifier: "tranactionCell")
         
         locationManager.delegate = self
