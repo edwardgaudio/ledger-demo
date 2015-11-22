@@ -7,7 +7,6 @@
 //
 
 import UIKit
-// {{date}} {{gps}} {{device_id}} {{note}} {{amount}} {{balance}}
 
 class TransactionModel: NSObject {
     

@@ -17,6 +17,22 @@ class demo_ledgerUITests: XCTestCase {
         
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
+        
+        
+        let app = XCUIApplication()
+        
+        let element = app.otherElements.containingType(.NavigationBar, identifier:"Transactions").childrenMatchingType(.Other).element.childrenMatchingType(.Other).element.childrenMatchingType(.Other).element
+        let textField = element.childrenMatchingType(.TextField).elementBoundByIndex(0)
+        
+        textField.tap()
+        
+        textField.typeText("Here is a note")
+        
+        let textField2 = element.childrenMatchingType(.TextField).elementBoundByIndex(1)
+        textField2.tap()
+        textField2.tap()
+        textField2.typeText("5.00")
+        app.buttons["DEPOSIT"].tap()
         // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
         XCUIApplication().launch()
 

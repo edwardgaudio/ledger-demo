@@ -1,15 +1,15 @@
 //
-//  demo_ledgerTests.swift
-//  demo-ledgerTests
+//  TransactionModelTest.swift
+//  demo-ledger
 //
-//  Created by edward on 11/11/15.
+//  Created by edward on 11/22/15.
 //  Copyright © 2015 edward gaudio. All rights reserved.
 //
 
 import XCTest
 @testable import demo_ledger
 
-class demo_ledgerTests: XCTestCase {
+class TransactionModelTest: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -21,12 +21,22 @@ class demo_ledgerTests: XCTestCase {
         super.tearDown()
     }
     
+    func testSubscript(){
+        let transaction = TransactionModel(note: "Hey", amount: 4.50, type: TransactionModel.transactionType.expense);
+        
+        XCTAssertEqual(transaction["note"], "Hey")
+        XCTAssertEqual(transaction["amount"], "4.50")
+        XCTAssertEqual(transaction["note"], "Hey")
+    }
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measureBlock {
             // Put the code you want to measure the time of here.
+            for _ in 1...10000 {
+                _ = TransactionModel(note: "Hey", amount: 4.50, type: TransactionModel.transactionType.expense);
+            }
         }
     }
-    
+        
 }

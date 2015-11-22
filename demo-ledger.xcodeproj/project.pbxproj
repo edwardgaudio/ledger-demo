@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B0B0B8F1C024800006EDBA0 /* TransactionModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0B0B8E1C024800006EDBA0 /* TransactionModelTest.swift */; };
 		2BEBF9341BF3D1DD00FD6C46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEBF9331BF3D1DD00FD6C46 /* AppDelegate.swift */; };
 		2BEBF9361BF3D1DD00FD6C46 /* LedgerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEBF9351BF3D1DD00FD6C46 /* LedgerViewController.swift */; };
 		2BEBF93B1BF3D1DD00FD6C46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BEBF93A1BF3D1DD00FD6C46 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B0B0B8E1C024800006EDBA0 /* TransactionModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionModelTest.swift; sourceTree = "<group>"; };
 		2BEBF9301BF3D1DD00FD6C46 /* demo-ledger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "demo-ledger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BEBF9331BF3D1DD00FD6C46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BEBF9351BF3D1DD00FD6C46 /* LedgerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedgerViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			children = (
 				2BEBF9481BF3D1DD00FD6C46 /* demo_ledgerTests.swift */,
 				2BEBF94A1BF3D1DD00FD6C46 /* Info.plist */,
+				2B0B0B8E1C024800006EDBA0 /* TransactionModelTest.swift */,
 			);
 			path = "demo-ledgerTests";
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B0B0B8F1C024800006EDBA0 /* TransactionModelTest.swift in Sources */,
 				2BEBF9491BF3D1DD00FD6C46 /* demo_ledgerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -473,6 +477,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "demo-ledger/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -485,6 +490,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "demo-ledger/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -560,6 +566,7 @@
 				2BEBF95A1BF3D1DD00FD6C46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2BEBF95B1BF3D1DD00FD6C46 /* Build configuration list for PBXNativeTarget "demo-ledgerTests" */ = {
 			isa = XCConfigurationList;
@@ -568,6 +575,7 @@
 				2BEBF95D1BF3D1DD00FD6C46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2BEBF95E1BF3D1DD00FD6C46 /* Build configuration list for PBXNativeTarget "demo-ledgerUITests" */ = {
 			isa = XCConfigurationList;
@@ -576,6 +584,7 @@
 				2BEBF9601BF3D1DD00FD6C46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
