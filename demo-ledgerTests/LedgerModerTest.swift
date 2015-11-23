@@ -21,6 +21,20 @@ class demo_ledgerTests: XCTestCase {
         super.tearDown()
     }
     
+    func testLedgerModel(){
+        XCTAssertEqual(LedgerModel.sharedInstance.balance, 0.00)
+        XCTAssertEqual(LedgerModel.sharedInstance.name, "The ledger")
+        //TODO: find way to test after core location comes back
+        XCTAssertEqual(LedgerModel.sharedInstance.location, "New York, New York")
+    }
+    
+    func testLedgerTransactions(){
+        LedgerServices.addTransactionToLedger("Hey", amount: 4.50, type: TransactionModel.transactionType.expense)
+        
+        let transactions = LedgerModel.sharedInstance.transactions
+        
+        XCTAssertEqual(transactions[0].note, "Hey")
+    }
     
     func testPerformanceExample() {
         // This is an example of a performance test case.

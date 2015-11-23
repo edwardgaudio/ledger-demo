@@ -39,7 +39,7 @@ class TransactionModel: NSObject {
     }
     
     var date:NSDate = NSDate()
-    var location:String = ledger.location
+    var location:String = LedgerModel.sharedInstance.location
     var device_id:String = UIDevice.currentDevice().name
     var note:String
     var amount:Float
@@ -54,13 +54,13 @@ class TransactionModel: NSObject {
         switch type {
         
         case transactionType.expense:
-            ledger.balance -= self.amount
+            LedgerModel.sharedInstance.balance -= self.amount
         case transactionType.deposit:
-            ledger.balance += self.amount
+            LedgerModel.sharedInstance.balance += self.amount
         
         }
         
-        self.balance = ledger.balance
+        self.balance = LedgerModel.sharedInstance.balance
         
     }
     

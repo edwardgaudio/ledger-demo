@@ -8,9 +8,9 @@
 
 import Foundation
 
-let ledger = LedgerModel()//Quicky singleton
-
 class LedgerModel: NSObject {
+    
+    static let sharedInstance = LedgerModel()
     
     var name = "The ledger"
     var balance:Float = 0.00;

@@ -19,7 +19,7 @@ class LedgerServices: NSObject {
         
         let newTrans = TransactionModel(note: note, amount: amount, type: type)
         
-        ledger.transactions.append(newTrans)
+        LedgerModel.sharedInstance.transactions.append(newTrans)
         
         //Add callback function to this? Possibly notification?
        

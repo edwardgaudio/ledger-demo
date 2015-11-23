@@ -12,7 +12,7 @@
 		2BEBF9361BF3D1DD00FD6C46 /* LedgerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEBF9351BF3D1DD00FD6C46 /* LedgerViewController.swift */; };
 		2BEBF93B1BF3D1DD00FD6C46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BEBF93A1BF3D1DD00FD6C46 /* Assets.xcassets */; };
 		2BEBF93E1BF3D1DD00FD6C46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BEBF93C1BF3D1DD00FD6C46 /* LaunchScreen.storyboard */; };
-		2BEBF9491BF3D1DD00FD6C46 /* demo_ledgerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEBF9481BF3D1DD00FD6C46 /* demo_ledgerTests.swift */; };
+		2BEBF9491BF3D1DD00FD6C46 /* LedgerModerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEBF9481BF3D1DD00FD6C46 /* LedgerModerTest.swift */; };
 		2BEBF9541BF3D1DD00FD6C46 /* demo_ledgerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEBF9531BF3D1DD00FD6C46 /* demo_ledgerUITests.swift */; };
 		2BEBF9641BF3F04B00FD6C46 /* LedgerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEBF9631BF3F04B00FD6C46 /* LedgerModel.swift */; };
 		2BEBF9661BF3F06E00FD6C46 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEBF9651BF3F06E00FD6C46 /* TransactionModel.swift */; };
@@ -52,7 +52,7 @@
 		2BEBF93D1BF3D1DD00FD6C46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BEBF93F1BF3D1DD00FD6C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BEBF9441BF3D1DD00FD6C46 /* demo-ledgerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "demo-ledgerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2BEBF9481BF3D1DD00FD6C46 /* demo_ledgerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demo_ledgerTests.swift; sourceTree = "<group>"; };
+		2BEBF9481BF3D1DD00FD6C46 /* LedgerModerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedgerModerTest.swift; sourceTree = "<group>"; };
 		2BEBF94A1BF3D1DD00FD6C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BEBF94F1BF3D1DD00FD6C46 /* demo-ledgerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "demo-ledgerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BEBF9531BF3D1DD00FD6C46 /* demo_ledgerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demo_ledgerUITests.swift; sourceTree = "<group>"; };
@@ -136,9 +136,9 @@
 		2BEBF9471BF3D1DD00FD6C46 /* demo-ledgerTests */ = {
 			isa = PBXGroup;
 			children = (
-				2BEBF9481BF3D1DD00FD6C46 /* demo_ledgerTests.swift */,
-				2BEBF94A1BF3D1DD00FD6C46 /* Info.plist */,
+				2BEBF9481BF3D1DD00FD6C46 /* LedgerModerTest.swift */,
 				2B0B0B8E1C024800006EDBA0 /* TransactionModelTest.swift */,
+				2BEBF94A1BF3D1DD00FD6C46 /* Info.plist */,
 			);
 			path = "demo-ledgerTests";
 			sourceTree = "<group>";
@@ -353,7 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B0B0B8F1C024800006EDBA0 /* TransactionModelTest.swift in Sources */,
-				2BEBF9491BF3D1DD00FD6C46 /* demo_ledgerTests.swift in Sources */,
+				2BEBF9491BF3D1DD00FD6C46 /* LedgerModerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

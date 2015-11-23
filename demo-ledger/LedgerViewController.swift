@@ -98,7 +98,7 @@ class LedgerViewController: UIViewController, UITableViewDataSource, UITableView
     func displayLocationInfo(placemark: CLPlacemark) {
         //stop updating location to save battery life
         locationManager.stopUpdatingLocation()
-        ledger.location = placemark.locality!
+        LedgerModel.sharedInstance.location = placemark.locality!
     }
 
     
@@ -125,7 +125,7 @@ class LedgerViewController: UIViewController, UITableViewDataSource, UITableView
     ///MARK UITableViewDataSource
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return ledger.transactions.count;
+        return LedgerModel.sharedInstance.transactions.count;
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -136,7 +136,7 @@ class LedgerViewController: UIViewController, UITableViewDataSource, UITableView
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("tranactionCell", forIndexPath: indexPath) as! TransactionTableViewCell
-        let item = ledger.transactions.reverse()[indexPath.row]
+        let item = LedgerModel.sharedInstance.transactions.reverse()[indexPath.row]
         
         cell.data = item
         
@@ -145,7 +145,7 @@ class LedgerViewController: UIViewController, UITableViewDataSource, UITableView
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        let data = ledger.transactions.reverse()[indexPath.row]
+        let data = LedgerModel.sharedInstance.transactions.reverse()[indexPath.row]
         let detailsController = TransactionDetailViewController()
         
         detailsController.TransDetails = data
